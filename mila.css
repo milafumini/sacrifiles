@@ -13,7 +13,7 @@
 }
 
 .background {
-    background-color: #e7e7e7;
+    background-color: #dad4b9;
 }
 .title {
     font-family: 'Grit Primer', serif;
@@ -27,12 +27,12 @@
 
 .title:hover {
     color: red;
-} 
+}
 
 .titleB {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 .subTitle {
     font-family: 'Grit Primer', serif;
@@ -71,8 +71,15 @@
 
 }
 
+#logo{
+  text-align: center;
+}
+#logo img {
+  width: 400px;
+  }
+
 #carouselExampleIndicators {
-    width: 50%; 
+    width: 50%;
     margin-left: 25%;
     margin-right: 25%;
 }
