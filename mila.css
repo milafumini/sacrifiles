@@ -106,11 +106,10 @@ footer {
 }
 
 
-/*STILE TAVOLE + SINOSSI*/
-.sourceDescr {
-    margin: 0 20%;
-    padding-bottom: 5%;
-    font-family: 'Times New Roman', Times, serif;
+/*STILE TAVOLE*/
+
+.tableDiv {
+    margin: 7% 30%;    
 }
 
 .tableHeader {
@@ -122,8 +121,6 @@ footer {
 }
 
 table {
-    margin: 0 2%;
-    border-collapse: collapse;
     border: 2px black solid;
     font: 14px sans-serif;
     font-family: 'Times New Roman', Times, serif;
@@ -131,9 +128,14 @@ table {
 
 td {
     border: 1px black solid;
-    padding: 5px;
+    padding: auto;
+    margin: auto;
 }
 
 td:hover {
     color: rgb(110, 14, 14);
+}
+
+.linkList {
+    padding: 0 25%;
 }
