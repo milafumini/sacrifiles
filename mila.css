@@ -107,7 +107,9 @@ footer {
 
 
 /*STILE TAVOLE*/
-
+.sourceDescr {
+    margin: 0 20%;
+}
 .tableDiv {
     margin: 7% 30%;    
 }
