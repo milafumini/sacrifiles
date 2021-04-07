@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cinzel&display=swap');
+@font-face {
+    font-family: 'Grit Primer';
+    src: url('font_grit/GritPrimer.eot');
+    src: url('font_grit/GritPrimer.eot?#iefix') format('embedded-opentype'),
+        url('font_grit/GritPrimer.woff2') format('woff2'),
+        url('font_grit/GritPrimer.woff') format('woff'),
+        url('font_grit/GritPrimer.ttf') format('truetype'),
+        url('font_grit/GritPrimer.svg#GritPrimer') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.background {
+    background-color: #dad4b9;
+}
+.title {
+    font-family: 'Grit Primer', serif;
+    font-size: 10vh;
+    text-align: center;
+    letter-spacing: 1vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.title:hover {
+    color: red;
+}
+
+.titleB {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-top: 10px;
+}
+.subTitle {
+    font-family: 'Grit Primer', serif;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Bodoni Moda', serif;
+}
+
+#introduction {
+    margin: 0 20%;
+    margin-top: 8%;
+    text-align: center;
+    /*border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;*/}
+
+#introduction p {
+    margin-top: 5%;
+}
+
+#introduction img {
+    width: 10%;
+}
+
+.cardcontainer{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card{
+    margin: 2% 4%;
+
+}
+
+#logo{
+  text-align: center;
+}
+#logo img {
+  width: 400px;
+  }
+
+#carouselExampleIndicators {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+#carouselExampleIndicators img{
+    width: 25%;
+}
+
+/**/
+nav {
+    font-family: 'Grit Primer', serif;
+}
+
+nav a {
+    font-size: 29px!important;
+}
+footer {
+    margin-top: 10%;
+    font-family: 'Grit Primer', serif;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+
+
+/*STILE TAVOLE*/
+
+.tableDiv {
+    margin: 7% 30%;    
+}
+
+.tableHeader {
+    text-align: center;
+}
+
+.tableHeader th:hover {
+    color: red;
+}
+
+table {
+    border: 2px black solid;
+    font: 14px sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td {
+    border: 1px black solid;
+    padding: auto;
+    margin: auto;
+}
+
+td:hover {
+    color: rgb(110, 14, 14);
+}
+
+.linkList {
+    padding: 0 25%;
+}
