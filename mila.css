@@ -25,10 +25,6 @@
     color: black;
 }
 
-.title:hover {
-    color: red;
-}
-
 .titleB {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -107,7 +103,7 @@ footer {
 
 
 /*STILE TAVOLE*/
-.sourceDescr {
+/* .sourceDescr {
     margin: 0 20%;
 }
 .tableDiv {
@@ -140,4 +136,4 @@ td:hover {
 
 .linkList {
     padding: 0 25%;
-}
+} */
