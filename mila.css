@@ -101,39 +101,12 @@ footer {
 
 }
 
-
-/*STILE TAVOLE*/
-/* .sourceDescr {
-    margin: 0 20%;
-}
-.tableDiv {
-    margin: 7% 30%;    
+.sourceDescr {
+    margin: 0 25%;
 }
 
-.tableHeader {
-    text-align: center;
-}
 
-.tableHeader th:hover {
-    color: red;
-}
-
-table {
-    border: 2px black solid;
-    font: 14px sans-serif;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-td {
-    border: 1px black solid;
-    padding: auto;
-    margin: auto;
-}
-
-td:hover {
-    color: rgb(110, 14, 14);
-}
 
 .linkList {
-    padding: 0 25%;
-} */
+    padding: 0 10% 25% 25%;
+} 
