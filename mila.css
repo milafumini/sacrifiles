@@ -105,8 +105,10 @@ footer {
     margin: 0 25%;
 }
 
-
-
 .linkList {
     padding: 0 10% 25% 25%;
 } 
+
+.theme--light.v-application {
+    background-color: transparent;
+}

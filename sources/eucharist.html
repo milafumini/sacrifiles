@@ -72,7 +72,8 @@
                   </div>
                   <div v-for="(value, property) in items">
                       <v-card-text v-if="property != 'Item title' && value">
-                          <p><strong>{{property}}</strong>: {{value}}</p>
+                          <p v-if="property == 'Links'"><strong>{{property}}</strong>: <a :href="value" target="_blank">{{value}}</a></p>
+                          <p v-else><strong>{{property}}</strong>: {{value}}</p>
                           <v-divider class="mx-4"></v-divider>
                       </v-card-text>                        
                   </div>
@@ -93,6 +94,9 @@
                           >
                           Show more
                       </v-btn>
+                  </template>    
+                  <template #item.links="{item}">
+                    <a :href="item.links" target="_blank">{{item.links}}</a>
                   </template>    
               </v-data-table>
           </v-app>
