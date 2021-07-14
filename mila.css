@@ -12,6 +12,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 .background {
     background-color: #dad4b9;
 }
