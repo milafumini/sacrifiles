@@ -29,6 +29,7 @@
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     padding-top: 10px;
+    margin-bottom: 3%;
 }
 .subTitle {
     font-family: 'Grit Primer', serif;
@@ -111,4 +112,12 @@ footer {
 
 .theme--light.v-application {
     background-color: transparent;
+}
+
+.imagesLinks {
+    padding: 0 25%;
+}
+
+#sacriself, #sacribible, #sacrirel, #sacripol, #sacrieu {
+    padding-top: 5%;
 }
