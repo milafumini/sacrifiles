@@ -13,9 +13,9 @@
   <title>SacriFiles - Sources</title>
 </head>
 
-<body class="">
+<body class="background">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="index.html">
       <img src="../immagini/navbar_logo.png">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -41,108 +41,73 @@
         </li>
     </div>
   </nav>
-  <div id="introduction" class="table_rows">
+  <div id="introduction" class="table_rows mb-5">
     <div class="titleB">
-      <h1 class="title">Bible bibliography</h1>
+      <h1 class="title">Sacrifice and Bible sources</h1>
     </div>
-    <table border="1" class="dataframe backtable">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>Author</th>
-          <th>Title</th>
-          <th>Place</th>
-          <th>Year</th>
-          <th>Language</th>
-          <th>Keywords</th>
-          <th>Link to Other Sources</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>001</th>
-          <td>Solomon</td>
-          <td><a href="bible_pages/solomon.html">Solomons sacrifice. : VVith his prayer in Gibeon, and how God appeared
-              to him in a vision and granted his request. To a pleasant new tune</a></td>
-          <td>London</td>
-          <td>1635</td>
-          <td>English</td>
-          <td>King, Solomon, Prayer, Gibeon, Old Testament</td>
-          <td><a
-              href="https://www.worldcat.org/title/solomons-sacrifice-vvith-his-prayer-in-gibeon-and-how-god-appeared-to-him-in-a-vision-and-granted-his-request-to-a-pleasant-new-tune/oclc/766881879&amp;referer=brief_results">WorldCat</a>
-          </td>
-        </tr>
-        <tr>
-          <th>002</th>
-          <td>Addison Lancelot</td>
-          <td>The Christians daily sacrifice duly offer'd, or, A practical discourse teaching the right performance of
-            prayer</td>
-          <td>London</td>
-          <td>1698</td>
-          <td>English</td>
-          <td>Prayers, Anglican, Devotion</td>
-          <td><a
-              href=https://books.google.it/books?id=J5pkAAAAcAAJ&amp;newbks=0&amp;printsec=frontcover&amp;dq=The+Christians+daily+sacrifice+duly+offer%27d&amp;hl=it&amp;redir_esc=y#v=onepage&amp;q&amp;f=false">Google
-              Books</a></td>
-        </tr>
-        <tr>
-          <th>003</th>
-          <td>Ainsworth Henry</td>
-          <td>Annotations upon the five bookes of Moses, the booke of the Psalmes, and the Song of Songs, or, Canticles
-            Wherein the Hebrevv vvords and sentences, are compared with, and explainedby the ancient Greeke and Chaldee
-            versions, and other records
-            and monuments of theHebrewes: but chiefly by conference with the holy Scriptures, Moses his words, lawes and
-            ordinances, the sacrifices, and other legall ceremonies heretofore commanded by God to the Church of Israel,
-            are explained. With an advertisement touching some objections made against the sinceritie of the Hebrew
-            text, and allegation of the Rabbines in these annotations. As also tables directing unto such principall
-            things as are observed in the annotations upon each severall booke.</td>
-          <td>London</td>
-          <td>1627</td>
-          <td>English</td>
-          <td>NaN</td>
-          <td><a href="https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/A11649">Oxford Text
-              Archive</a></td>
-        </tr>
-        <tr>
-          <th>004</th>
-          <td>Anonymous</td>
-          <td>A few thoughts upon the love and sacrifice of Jesus Christ. Sent by a well-wisher to religion, in a letter
-            to his correspondent</td>
-          <td>Glasgow</td>
-          <td>1765</td>
-          <td>English</td>
-          <td>Biblical commentary, New Testament, Ephesinians 5, 2</td>
-          <td><a href="https://lib.ugent.be/en/catalog/rug01:001157253"> Universiteitsbibliotheek Gent</a></td>
-        </tr>
-        <tr>
-          <th>005</th>
-          <td>Barksdale Clement</td>
-          <td>The Sacrifice. A sermon upon psalm 51,17</td>
-          <td>Oxford</td>
-          <td>1655</td>
-          <td>English</td>
-          <td>Anglican,Sermons,Psalms</td>
-          <td><a
-              href="https://ota.bodleian.ox.ac.uk/repository/xmlui/bitstream/handle/20.500.12024/A30957/A30957.html?sequence=5&amp;isAllowed=y">Oxford
-              Text Archive</a></td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="bibliographyTable"></div>
-  </div>
+  </div>    
+  <div class="container">
+      <div id="app">
+          <v-app>
+              <v-card v-if="showDetails"
+                  class="elevation-24 mx-auto">
+                  <v-card-actions>
+                      <v-btn
+                          rounded
+                          color="error"
+                          dark
+                          @click="backToTable"
+                      >
+                      <v-icon
+                          dark
+                          right
+                      >mdi-arrow-left            
+                      </v-icon>Back 
+                    </v-btn>
+                  </v-card-actions>
+                  <div v-for="(value, property) in items">
+                      <v-card-title v-if="property == 'Item title'">
+                          <p>{{value}}</p>
+                      </v-card-title>    
+                  </div>
+                  <div v-for="(value, property) in items">
+                      <v-card-text v-if="property != 'Item title' && value">
+                          <p v-if="property == 'Links'"><strong>{{property}}</strong>: <a :href="value" target="_blank">{{value}}</a></p>
+                          <p v-else><strong>{{property}}</strong>: {{value}}</p>
+                          <v-divider class="mx-4"></v-divider>
+                      </v-card-text>                        
+                  </div>
+              </v-card>     
+              <v-data-table v-if="showTable"
+                  :items="data"
+                  :headers="headers"
+                  :items-per-page="5"
+                  :calculate-widths="true"
+                  class="elevation-4"
+                  >
+                  <template #item.controls="{item}">
+                      <v-btn
+                          rounded
+                          color="error"
+                          dark
+                          @click="showMore(item)"
+                          >
+                          Show more
+                      </v-btn>
+                  </template>    
+                  <template #item.links="{item}">
+                    <a :href="item.links" target="_blank">{{item.links}}</a>
+                  </template>    
+              </v-data-table>
+          </v-app>
+      </div>    
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="../custom.js"></script>
+  <script src="../static/js/custom1.js"></script>
 </body>
 
 </html>
