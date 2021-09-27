@@ -10,7 +10,7 @@ String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
-$.get("../data/sources/src_1_bible.csv", function (CSVdata) {
+$.get("../data/sources/src_5_self.csv", function (CSVdata) {
     var options = { "separator": ";" };
     data = $.csv.toObjects(CSVdata, options);
     const App = new Vue({
