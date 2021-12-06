@@ -22,14 +22,11 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-center">
+          <div class="card-body text-justify">
           <img class="card-img-top img-responsive" src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
-            <h5 class="card-title">${dictimg['title']}</h5>
-            <p class="card-text">Source: ${dictimg['year']}</p>
-            <p class="card-text">Source: ${dictimg['VIAF']}</p>
-            <p class="card-text">Source: ${dictimg['source']}</p>
-            <p class="card-text">Location: ${dictimg['location']}</p>
-            <p class="card-text">Keywords: ${dictimg['kword1']}, ${dictimg['kword2']}, ${dictimg['kword3']}, ${dictimg['kword4']}, ${dictimg['kword5']}</p>
+            <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
+            <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
+          <p class="card-text">Keywords: ${dictimg['kword1']} ${dictimg['kword2']} ${dictimg['kword3']} ${dictimg['kword4']} ${dictimg['kword5']}</p>
           </div>
         </div>
       </div>`
@@ -38,15 +35,11 @@ function getImages(imageIndex) {
         var card = `
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="card border-0 document-card-size">
-            <div class="card-body text-center">
-            <img class="card-img-top img-responsive" src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
-              <h5 class="card-title">${dictimg['title']}</h5>
-              <p class="card-text">Source: ${dictimg['year']}</p>
-              <p class="card-text">Source: ${dictimg['VIAF']}</p>
-              <p class="card-text">Source: ${dictimg['source']}</p>
-              <p class="card-text">Location: ${dictimg['location']}</p>
-              <p class="card-text">Keywords: ${dictimg['kword1']}, ${dictimg['kword2']}, ${dictimg['kword3']}, ${dictimg['kword4']}, ${dictimg['kword5']}</p>
-            </div>
+            <div class="card-body text-justify">
+            <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
+            <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
+            <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
+          <p class="card-text">Keywords: ${dictimg['kword1']} ${dictimg['kword2']} ${dictimg['kword3']} ${dictimg['kword4']} ${dictimg['kword5']}</p></div>
           </div>
         </div>`
         sacrirel.push(card)
@@ -55,15 +48,11 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-center">
-          <img class="card-img-top img-responsive" src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
-            <h5 class="card-title">${dictimg['title']}</h5>
-            <p class="card-text">Source: ${dictimg['year']}</p>
-            <p class="card-text">Source: ${dictimg['VIAF']}</p>
-            <p class="card-text">Source: ${dictimg['source']}</p>
-            <p class="card-text">Location: ${dictimg['location']}</p>
-            <p class="card-text">Keywords: ${dictimg['kword1']}, ${dictimg['kword2']}, ${dictimg['kword3']}, ${dictimg['kword4']}, ${dictimg['kword5']}</p>
-          </div>
+          <div class="card-body text-justify">
+          <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
+          <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
+          <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
+        <p class="card-text">Keywords: ${dictimg['kword1']} ${dictimg['kword2']} ${dictimg['kword3']} ${dictimg['kword4']} ${dictimg['kword5']}</p></div>
         </div>
       </div>`
       sacripol.push(card)
@@ -72,15 +61,11 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-center">
-          <img class="card-img-top img-responsive" src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
-            <h5 class="card-title">${dictimg['title']}</h5>
-            <p class="card-text">Source: ${dictimg['year']}</p>
-            <p class="card-text">Source: ${dictimg['VIAF']}</p>
-            <p class="card-text">Source: ${dictimg['source']}</p>
-            <p class="card-text">Location: ${dictimg['location']}</p>
-            <p class="card-text">Keywords: ${dictimg['kword1']}, ${dictimg['kword2']}, ${dictimg['kword3']}, ${dictimg['kword4']}, ${dictimg['kword5']}</p>
-          </div>
+          <div class="card-body text-justify">
+          <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
+          <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
+          <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
+        <p class="card-text">Keywords: ${dictimg['kword1']} ${dictimg['kword2']} ${dictimg['kword3']} ${dictimg['kword4']} ${dictimg['kword5']}</p></div>
         </div>
       </div>`
       sacrieu.push(card)
@@ -89,15 +74,11 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-center">
-          <img class="card-img-top img-responsive" src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
-            <h5 class="card-title">${dictimg['title']}</h5>
-            <p class="card-text">Source: ${dictimg['year']}</p>
-            <p class="card-text">Source: ${dictimg['VIAF']}</p>
-            <p class="card-text">Source: ${dictimg['source']}</p>
-            <p class="card-text">Location: ${dictimg['location']}</p>
-            <p class="card-text">Keywords: ${dictimg['kword1']}, ${dictimg['kword2']}, ${dictimg['kword3']}, ${dictimg['kword4']}, ${dictimg['kword5']}</p>
-          </div>
+          <div class="card-body text-justify">
+          <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
+          <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
+          <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
+        <p class="card-text">Keywords: ${dictimg['kword1']} ${dictimg['kword2']} ${dictimg['kword3']} ${dictimg['kword4']} ${dictimg['kword5']}</p></div>
         </div>
       </div>`
       sacriself.push(card)
