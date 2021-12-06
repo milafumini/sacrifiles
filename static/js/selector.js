@@ -22,7 +22,7 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-justify">
+          <div class="card-body text-center">
           <img class="card-img-top img-responsive" src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
             <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
             <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
@@ -35,7 +35,7 @@ function getImages(imageIndex) {
         var card = `
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="card border-0 document-card-size">
-            <div class="card-body text-justify">
+            <div class="card-body text-center">
             <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
             <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
             <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
@@ -48,7 +48,7 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-justify">
+          <div class="card-body text-center">
           <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
           <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
           <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
@@ -61,7 +61,7 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-justify">
+          <div class="card-body text-center">
           <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
           <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
           <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
@@ -74,7 +74,7 @@ function getImages(imageIndex) {
       var card = `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card border-0 document-card-size">
-          <div class="card-body text-justify">
+          <div class="card-body text-center">
           <img class="card-img-top img-responsive"  src="https://drive.google.com/uc?export=view&id=${dictimg['link']}" alt="Card image cap">
           <h5 class="card-title">${dictimg['author']}; ${dictimg['title']}; ${dictimg['year']}</h5>
           <p class="card-text">Source: ${dictimg['source']}; Location: ${dictimg['location']}</p>
